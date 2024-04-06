@@ -1,0 +1,14 @@
+<h1>Screening Recommendation</h1>
+{% if rules %}
+    <ul>
+    {% for rule in rules %}
+        <li>
+            {{ rule.screening_test }} every {{ rule.interval_years }} year(s)
+            {% if rule.notes %}<br><strong>Notes:</strong> {{ rule.notes }}{% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No screening recommendations found for the provided patient information.</p>
+{% endif %}
+<a href="{% url 'home' %}">Back to Home</a>

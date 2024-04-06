@@ -1,0 +1,7 @@
+<h1>Screening Guidelines</h1>
+<ul>
+{% for guideline in guidelines %}
+    <li>{{ guideline.name }}</li>
+{% endfor %}
+</ul>
+<a href="{% url 'screening_recommendation' %}">Get Screening Recommendation</a>

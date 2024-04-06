@@ -1,0 +1,16 @@
+https://www.quebec.ca/en/health/advice-and-prevention/screening-and-carrier-testing-offer/cervical-cancer-screening
+https://www.quebec.ca/en/health/advice-and-prevention/screening-and-carrier-testing-offer/screening-for-sexually-transmitted-and-blood-borne-infections-stbbis
+https://www.quebec.ca/en/health/advice-and-prevention/screening-and-carrier-testing-offer/blood-and-urine-screening-newborns
+https://www.quebec.ca/en/health/advice-and-prevention/screening-and-carrier-testing-offer/quebec-prenatal-screening-program
+https://www.quebec.ca/en/health/advice-and-prevention/screening-and-carrier-testing-offer/colorectal-cancer-screening
+https://www.quebec.ca/en/health/advice-and-prevention/screening-and-carrier-testing-offer/breast-cancer-screening
+https://www.quebec.ca/en/health/advice-and-prevention/screening-and-carrier-testing-offer/lung-cancer-screening-demonstration-project
+
+
+
+
+
+
+
+Add regions of applicability instead of making that free text
+Create rule for "when was the last X" done?
