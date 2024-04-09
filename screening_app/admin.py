@@ -3,7 +3,7 @@ from .models import ScreeningGuideline, ScreeningRule
 
 @admin.register(ScreeningGuideline)
 class ScreeningGuidelineAdmin(admin.ModelAdmin):
-    list_display = ('name', 'description', 'notes', 'province')
+    list_display = ('name', 'description', 'notes', 'province', 'questions', 'rules')
 
 @admin.register(ScreeningRule)
 class ScreeningRuleAdmin(admin.ModelAdmin):

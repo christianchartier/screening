@@ -1,6 +1,48 @@
 <h1>Patient Information</h1>
 <form method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    <div>
+        <label for="id_name">Name:</label>
+        <input type="text" name="name" id="id_name" required>
+    </div>
+    <div>
+        <label for="id_age">Age:</label>
+        <input type="number" name="age" id="id_age" required>
+    </div>
+    <div>
+        <label for="id_gender">Gender:</label>
+        <select name="gender" id="id_gender" required>
+            <option value="">---------</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    <div>
+        <label for="id_province">Province:</label>
+        <select name="province" id="id_province" required>
+            <option value="">---------</option>
+            {% for value, label in province_choices %}
+                <option value="{{ value }}">{{ label }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <h2>Screening Questions</h2>
+    {% for field in form %}
+        {% if field.name != 'name' and field.name != 'age' and field.name != 'gender' and field.name != 'province' %}
+            <div>
+                <label>{{ field.label }}</label>
+                <div>
+                    <label>
+                        <input type="radio" name="{{ field.name }}" value="True" required> Yes
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="{{ field.name }}" value="False" required> No
+                    </label>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
     <button type="submit">Submit</button>
 </form>
